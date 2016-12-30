@@ -19,7 +19,7 @@ gem 'metriks-librato_metrics'
 gem 'pg', platform: :mri
 gem 'pry'
 gem 'puma'
-gem 'pusher', '~> 0.14.5'
+gem 'pusher', '~> 1.3.0'
 gem 'rack-ssl'
 gem 'rack-test', group: :test
 gem 'rails_12factor'
