@@ -1,4 +1,5 @@
 require 'pusher'
+require 'jrjackson'
 require 'multi_json'
 
 module Travis

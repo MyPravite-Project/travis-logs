@@ -11,6 +11,7 @@ gem 'excon'
 gem 'faraday'
 gem 'jdbc-postgres', platform: :jruby
 gem 'jruby-openssl', platform: :jruby
+gem 'jrjackson'
 gem 'json'
 gem 'jwt'
 gem 'march_hare', '~> 2', platform: :jruby
