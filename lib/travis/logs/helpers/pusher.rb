@@ -12,7 +12,7 @@ module Travis
         def initialize(pusher_client = nil)
           @pusher_client = pusher_client || default_client
           Travis.logger.info "MultiJSON engine:"
-          Travis.logger.info MultiJson.engine
+          Travis.logger.info MultiJson.engine.inspect
         end
 
         def push(payload)
