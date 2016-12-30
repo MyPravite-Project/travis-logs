@@ -36,6 +36,10 @@ module Travis
         end
 
         def pusher_payload(payload)
+          Travis.Logger.info "payload chars:"
+          Travis.Logger.info payload['chars']
+          Travis.Logger.info "encoding: #{payload['chars'].encoding}"
+          Travis.Logger.info ""
           MultiJson.dump({
             'id' => payload['id'],
             '_log' => payload['chars'],
