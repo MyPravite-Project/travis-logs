@@ -40,6 +40,7 @@ module Travis
           # Travis.logger.info payload['chars']
           # Travis.logger.info "encoding: #{payload['chars'].encoding}"
           # Travis.logger.info ""
+          MultiJson.engine = :jrjackson
           MultiJson.dump({
             'id' => payload['id'],
             '_log' => payload['chars'],
