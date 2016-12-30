@@ -13,7 +13,7 @@ module Travis
 
         def push(payload)
           Travis.logger.info 'Sending this via Pusher:'
-          Travis.logger.info pusher_payload(payload)
+          Travis.logger.info pusher_payload(payload).inspect
           pusher_channel(payload).trigger('job:log', pusher_payload(payload))
         end
 
