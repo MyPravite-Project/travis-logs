@@ -11,6 +11,8 @@ module Travis
       class Pusher
         def initialize(pusher_client = nil)
           @pusher_client = pusher_client || default_client
+          Travis.logger.info "MultiJSON engine:"
+          Travis.logger.info MultiJson.engine
         end
 
         def push(payload)
@@ -41,7 +43,6 @@ module Travis
           # Travis.logger.info payload['chars']
           # Travis.logger.info "encoding: #{payload['chars'].encoding}"
           # Travis.logger.info ""
-          MultiJson.engine = :jrjackson
           MultiJson.dump({
             'id' => payload['id'],
             '_log' => payload['chars'],
