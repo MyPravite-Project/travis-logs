@@ -179,6 +179,7 @@ DEPENDENCIES
   march_hare (~> 2)
   metriks
   metriks-librato_metrics
+  multi_json
   pg
   pry
   puma

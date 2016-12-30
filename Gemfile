@@ -16,6 +16,7 @@ gem 'jwt'
 gem 'march_hare', '~> 2', platform: :jruby
 gem 'metriks'
 gem 'metriks-librato_metrics'
+gem 'multi_json'
 gem 'pg', platform: :mri
 gem 'pry'
 gem 'puma'
